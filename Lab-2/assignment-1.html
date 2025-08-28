@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: blue;
+        height: 60px;
+      }
+      .head a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+      .head a:hover {
+        color: yellow;
+      }
+      /* welcome message */
+      #welcome {
+        margin: 10px;
+        color: red;
+      }
+
+      /* main-container */
+      .main-conatier {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .box-1 {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        margin: 2rem;
+      }
+      #zoro-img {
+        height: 400px;
+        width: 400px;
+        border-radius: 1rem;
+      }
+      .content {
+        padding: 0 10rem;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content p {
+        font-size: 1.2rem;
+      }
+
+      .box-2 {
+        padding: 0 5rem;
+        margin: 2rem;
+      }
+
+      .placement-cards{
+        display: flex;
+      }
+      .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 600px;
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 0 5rem;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-img {
+        flex: 1;
+        min-width: 250px;
+        height: 90%;
+      }
+
+      .card-img img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+      }
+
+      .card-content {
+        flex: 2;
+        padding: 20px;
+      }
+
+      .card-content h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        color: #333;
+      }
+
+      .card-content p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .card-content button {
+        margin-top: 15px;
+        padding: 10px 18px;
+        border: none;
+        background: #1e90ff;
+        color: white;
+        font-size: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+      }
+
+      .card-content button:hover {
+        background: #0057b7;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <a href="#">Home</a>
+        <a href="#">About-Us</a>
+        <a href="#">Class</a>
+      </div>
+    </header>
+    <main>
+      <!-- welcome message -->
+      <center>
+        <marquee><h1 id="welcome">Welcome ABESEC</h1></marquee>
+        <div class="main-container">
+          <div class="box-1">
+            <div class="img-container">
+              <img id="zoro-img" src="zoro.jpeg" alt="zoro" />
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
+                incidunt magnam magni aperiam sit maiores, animi est sapiente
+                provident eaque suscipit laboriosam ut natus numquam hic unde
+                fuga iure assumenda distinctio ducimus perferendis a. Nesciunt
+                quam repudiandae doloremque eligendi corporis, neque suscipit at
+                vel hic nemo libero voluptates animi quidem a aliquam amet
+                consequuntur ipsam? Veniam porro unde dolores maiores animi
+                accusamus, dicta, impedit enim fugit libero temporibus molestiae
+                dolorem tenetur <br /><br />adipisci corrupti fugiat commodi
+                sint tempore quia atque nihil? Voluptas rerum dolores enim
+                laudantium. A accusantium reiciendis nisi perferendis nemo
+                maxime unde eligendi illo ad provident nam odit harum ut ipsum
+                sapiente dolores ipsam, quaerat omnis eveniet voluptas repellat.
+                Eos a rerum aperiam quidem sapiente est, soluta nostrum
+                veritatis delectus dignissimos, impedit voluptas, possimus
+                nesciunt? At, beatae eius. Facilis aliquam eaque aliquid ipsam
+                esse. Voluptate ducimus dolor vitae magni? Cupiditate laborum
+                eos non, maxime minima officiis rerum. Aperiam, beatae voluptate
+                pariatur omnis provident reprehenderit ad. Iste, perferendis
+                facere blanditiis, cupiditate doloremque et cum sunt tempora
+                deserunt, libero nemo. Dignissimos odit dolore sapiente vitae
+                magnam consequatur exercitationem nisi tenetur. Voluptate iure
+                eum earum possimus dolor accusamus nisi magni deserunt aliquam
+                soluta doloribus dicta libero, porro natus architecto
+                praesentium impedit cupiditate.
+              </p>
+            </div>
+          </div>
+          <!-- Placement info -->
+          <div class="box-2">
+            <h1>Our Placed Students</h1>
+            <br><br>
+            <marquee>
+              <div class="placement-cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="dogesh-behen.jpeg" alt="Card Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>Arpit Kumar</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Totam qui laboriosam modi quaerat laudantium eligendi nam
+                      ducimus rem non ut?
+                    </p>
+                    <button>Read More</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="dogesh-behen.jpeg" alt="Card Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>Arpit Kumar</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Totam qui laboriosam modi quaerat laudantium eligendi nam
+                      ducimus rem non ut?
+                    </p>
+                    <button>Read More</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="dogesh-behen.jpeg" alt="Card Image" />
+                  </div>
+                  <div class="card-content">
+                    <h2>Arpit Kumar</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Totam qui laboriosam modi quaerat laudantium eligendi nam
+                      ducimus rem non ut?
+                    </p>
+                    <button>Read More</button>
+                  </div>
+                </div>
+              </div>
+            </marquee>
+          </div>
+        </div>
+      </center>
+    </main>
+  </body>
+</html>
