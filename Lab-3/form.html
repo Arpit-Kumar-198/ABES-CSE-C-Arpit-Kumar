@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <style>
-        header{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: antiquewhite;
-        }
-        header div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 95%;
-        }
-        #img{
-            border-radius: 50%;
-            height: 40px;
-            width: 40px;
-        }
-        #welcome{
-            color: red;
-        }
-        .user-detail{
-            width: 100%;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .user-box input{
-            margin: 10px;
-        }
-        .user-box select{
-            margin: 10px;
-        }
-        form a button{
-            background-color: blue;
-            color: #fff;
-            font-size: 25px;
-            padding: 8px;
-            border-radius: 10px;
-        }
-        main{
-            display: flex;
-            justify-content: center;
-        }
-        .main-box{
-            margin-top: 1%;
-            padding: 10px;
-            border: 2px solid black;
-            height: 600px;
-            width: 600px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img id="img" src="profile1.jpeg"/>
-            <div><h1>Bus Seat Book</h1></div>
-        </header>
-        <main>
-            <div class="main-box">
-                <center><h1 id="welcome">* Welcome to bus booking system *</h1></center>
-                <form action="" method="post">
-                    <center><h2>User Details</h2></center>
-                    <div class="user-detail">
-                        <div class="user-box">
-                            User Name : <input type="text"><br>
-                            User Password : <input type="password"><br>
-                            User Gender : <br>
-                            <input type="radio" name="gender"> Male<br>
-                            <input type="radio" name="gender"> Female<br>
-                            User Select City : <select>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Mumbai">Mumbai</option>
-                                <option value="Noida">Noida</option>
-                            </select>
+      header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: antiquewhite;
+      }
+      header div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+      }
+      #img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+      }
+      #welcome {
+        color: red;
+      }
+      .user-detail {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .user-box input {
+        margin: 10px;
+      }
+      .user-box select {
+        margin: 10px;
+      }
 
-                        </div>
-                        <div class="bus-box">
-                            <img id="bus-img" src="bus.jpeg">
-                        </div>
-                    </div>
-                    <div>
-                   </div>
-                   <center>
-  <a href="seat.html" style="padding:10px 20px; background:green; color:white; border-radius:5px; text-decoration:none;">
-    Seat Book
-  </a>
-</center>
-                </form>
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      .main-box {
+        margin-top: 1%;
+        padding: 10px;
+        border: 2px solid black;
+        height: 600px;
+        width: 600px;
+        background-color: rgb(235, 235, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img id="img" src="profile1.jpeg" />
+        <div><h1>Bus Seat Book</h1></div>
+      </header>
+      <main>
+        <div class="main-box">
+          <center>
+            <h1 id="welcome">* Welcome to bus booking system *</h1>
+          </center>
+          <form action="" method="post">
+            <center><h2>User Details</h2></center>
+            <div class="user-detail">
+              <div class="user-box">
+                User Name : <input type="text" /><br />
+                User Password : <input type="password" /><br />
+                User Gender : <br />
+                <input type="radio" name="gender" /> Male<br />
+                <input type="radio" name="gender" /> Female<br />
+                User Select City :
+                <select>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Noida">Noida</option>
+                </select>
+              </div>
+              <div class="bus-box">
+                <img id="bus-img" src="bus.jpeg" />
+              </div>
+              <a
+                href="seat.html"
+                style="
+                  padding: 10px 20px;
+                  font-size: 2rem;
+                  background: green;
+                  color: white;
+                  border-radius: 5px;
+                  text-decoration: none;
+                "
+              >
+                Seat Book
+              </a>
             </div>
-        </main>
+            
+           
+          </form>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
