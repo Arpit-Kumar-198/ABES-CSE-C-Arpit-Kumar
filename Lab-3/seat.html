@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        header div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+        }
+        #img{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+        #welcome{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="img" src="profile1.jpeg"/>
+            <div><h1>Bus Seat Book</h1></div>
+        </header>
+        <main>
+            <div class="main-box">
+                <center><h1 id="welcome">* Welcome to bus booking system *</h1></center>
+                <center>
+                    <table>
+                    <tr>
+                        <td><h2>Select Seat mode</h2></td>
+                        <td rowspan="3"><img src="bus.jpeg"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="a">AC<br>
+                            <input type="radio" name="a">NON AC<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2>Select payment mode</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="p">UPI<br>
+                            <input type="radio" name="p">ATM<br>
+                        </td>
+                    </tr>
+
+                </table>
+                </center>
+                <center><h2>Thank Out Service</h2></center>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
