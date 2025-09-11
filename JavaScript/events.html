@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 100px;
+        }
+        button{
+            color: white;
+            background-color: green;
+            padding: 10px;
+            font-size: 50px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        button:hover{
+            transform: translatey(-10px);
+        }
+    </style>
 </head>
 <body>
-    
+    <button id="btn" onclick="greet()">Click Me</button>
+    <h1></h1>
+    <script>
+        var h1 = document.querySelector('h1');
+        var b = document.querySelector('body');
+        function greet(){
+            h1.innerText="Hello ABES";
+            b.style.backgroundColor="rgb(255, 255, 173)";
+        }
+        
+    </script>
 </body>
 </html>
