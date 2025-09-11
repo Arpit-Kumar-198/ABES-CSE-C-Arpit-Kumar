@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: Blue;
+            font-size: 150px;
+            text-shadow: 5px 5px 10px black;
+        }
+        h1 span{
+            color: red;
+            font-size: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Its <span></span></h1>
+    <script>
+        var d = new Date().getDay();
+        var span = document.querySelector('h1 span');
+        
+        switch(d){
+            case 1:
+                span.innerText="Monday";
+                break;
+            case 2:
+                span.innerText="Tuesday";
+                break;
+            case 3:
+                span.innerText="Wednesday";
+                break;
+            case 4:
+                span.innerText="Thrusday";
+                break;
+            case 5:
+                span.innerText="Friday";
+                break;
+            case 6:
+                span.innerText="Saturday";
+                break;
+            case 0:
+                span.innerText="Sunday";
+                break;
+        };
+    </script>
+</body>
+</html>
