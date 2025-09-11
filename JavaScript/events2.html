@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #body button{
+            font-size: 50px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body id="body">
+    <button onclick="red();">Red</button>
+    <button onclick="green();">Green</button>
+    <button onclick="blue();">Blue</button>
+    <script>
+        var b = document.querySelector('#body');
+        function red(){
+            b.style.backgroundColor="red";
+        }
+        function blue(){
+            b.style.backgroundColor="blue";
+        }
+        function green(){
+            b.style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>
