@@ -11,10 +11,12 @@
 <body>
     <div id="abes"></div>
     <script>
-        var car= new Array(" bmw ", " audi ", " maruti ");
-        document.getElementById('abes').innerHTML=car;
-        car[2] = "supra";
-        document.getElementById('abes').innerHTML=car;
+        const person = {
+            name:"Arpit",
+            age:20,
+            college:"ABES",
+        };
+        document.getElementById('abes').innerText=person.name;
     </script>
 </body>
 </html>
