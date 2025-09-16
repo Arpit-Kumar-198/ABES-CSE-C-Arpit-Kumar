@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card1, .card2{
+            border: 2px solid black;
+            margin: 2rem 0 2rem 2rem;
+            padding: 20px;
+            width: 20%;
+        }
+        .card1:hover, .card2:hover{
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <h1 id="head1"></h1>
+            <p id="student-data1"></p>
+        </div>
+        <div class="card2">
+            <h1 id="head2"></h1>
+            <p id="student-data2"></p>
+        </div>
+    </div>
+    <script>
+        const student1 = {
+            firstname:"Arpit",
+            lastname:"Kumar",
+            age:20,
+            class:"CSE"
+        };
+        const student2 = {
+            firstname:"Aryan",
+            lastname:"Panwar",
+            age:22,
+            class:"CSE"
+        };
+        const student3 = {
+            firstname:"Harsh",
+            lastname:"Maurya",
+            age:21,
+            class:"IT"
+        };
+        const card1 = document.querySelector('.card1');
+        const head1 = document.querySelector('#head1');
+        const studentDetail1 = document.querySelector('#student-data1');
+
+        const card2 = document.querySelector('.card2');
+        const head2 = document.querySelector('#head2');
+        const studentDetail2 = document.querySelector('#student-data2');
+
+        head1.innerText=student1.class;
+        studentDetail1.innerText=`${student1.firstname} ${student1.lastname}\n${student2.firstname} ${student2.lastname}`;
+
+        head2.innerText=student3.class;
+        studentDetail2.innerText=`${student3.firstname} ${student3.lastname}`;
+    
+    </script>
+</body>
+</html>
