@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        var n1 = prompt("Enter number 1 : ");
+        var n2 = prompt("Enter number 2 : ");
+
+        var even = [];
+        var odd = [];
+        document.write("Table - 1 <br>");
+        for(let i = 1; i <= n1; i++){
+            document.writeln(`${i} <br>`);
+            if(i%2 == 0) even.push(i);
+        }
+        document.write("<hr>");
+        document.write("Table - 2 <br>");
+        for(let i = 1; i <= n2; i++){
+            document.writeln(`${i} <br>`);
+            if(i%2 != 0) odd.push(i);
+        }
+        document.write("<hr>");
+        document.write(`Even = ${even}`);
+        document.write("<br>");
+        document.write(`Odd = ${odd}`);
+
+    </script>
+</body>
+</html>
