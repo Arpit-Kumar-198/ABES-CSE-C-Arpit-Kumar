@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    Name : <input type="text" id="name" placeholder="Name" /><br />
+    Course : <input type="text" id="course" placeholder="Course" /><br /><br />
+    Languages : <br /><input
+      type="text"
+      id="language1"
+      placeholder="Language 1"
+    /><br />
+    <input type="text" id="language2" placeholder="Language 2" /><br />
+    <input type="text" id="language3" placeholder="Language 3" /><br />
+    Upload Image : <input type="file" id="image" />
+    <div class="container">
+      <div class="box1">
+        <img id="myimg" src="" alt="Uploaded Image" style="max-width: 300px;"/>
+        <div>
+          <h1 id="myname"></h1>
+          <h2 id="mycourse"></h2>
+        </div>
+      </div>
+      <div class="box2">
+        <ul>
+          <li id="lang1"></li>
+          <li id="lang2"></li>
+          <li id="lang3"></li>
+        </ul>
+      </div>
+      <button onclick="submit()">Submit</button>
+    </div>
+    <script>
+      const inputname = document.querySelector("#name");
+      const inputcourse = document.querySelector("#course");
+      const inputlang1 = document.querySelector("#language1");
+      const inputlang2 = document.querySelector("#language2");
+      const inputlang3 = document.querySelector("#language3");
+      const inputimage = document.querySelector("#image");
+
+      const myname = document.querySelector("#myname");
+      const mycourse = document.querySelector("#mycourse");
+      const lang1 = document.querySelector("#lang1");
+      const lang2 = document.querySelector("#lang2");
+      const lang3 = document.querySelector("#lang3");
+      const myimg = document.querySelector("#myimg");
+
+      function submit() {
+        myname.innerText = inputname.value;
+        mycourse.innerText = inputcourse.value;
+        lang1.innerText = inputlang1.value;
+        lang2.innerText = inputlang2.value;
+        lang3.innerText = inputlang3.value;
+      }
+        inputimage.addEventListener("change", function (event) {
+          const file = event.target.files[0]; 
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              myimg.src = e.target.result; 
+            };
+            reader.readAsDataURL(file); 
+          }
+        });
+    </script>
+  </body>
+</html>
