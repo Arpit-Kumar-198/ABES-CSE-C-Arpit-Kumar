@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem;
+        }
+        .left img{
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 5rem;
+        }
+        .right{
+            overflow-y: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center><h1>To Do List</h1></center>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <img src="profile1.jpeg">
+                <a href="assignment-9.2.html">
+                    <button id="list-all">List of all</button>
+                </a>
+            </div>
+            <div class="right">
+                <div>
+                    <input id="input-box" type="text">
+                    <button id="add-btn">+</button>
+                </div>
+                <div class="items"></div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
