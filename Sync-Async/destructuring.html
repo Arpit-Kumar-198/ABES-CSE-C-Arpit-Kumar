@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="adi">Hello JS</p>
+    <script>
+      const person = {
+        name:"ABES",
+        branch:"CSE",
+        sec:"C"
+      };
+      let {name,branch,sec} = person;
+      console.log(name,branch,sec);
+      document.getElementById('adi').innerText = `${name} , ${branch} , ${sec}`;
+    </script>
+  </body>
+</html>
