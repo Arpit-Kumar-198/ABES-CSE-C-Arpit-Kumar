@@ -1,0 +1,9 @@
+#ourmenu{
+    padding: 1rem;
+    
+}
+#items-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
