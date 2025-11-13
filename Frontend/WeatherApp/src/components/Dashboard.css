@@ -1,0 +1,55 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3a6073, #16222a);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.city-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-main {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.loading-msg, .error-msg {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #ffcccb;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
