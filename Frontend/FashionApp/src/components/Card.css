@@ -1,0 +1,42 @@
+.product-card{
+    height: 40rem;
+    width: 30rem;
+    background-color: rgb(196, 196, 196);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    transition: 0.3s ease-in-out;
+}
+.product-card:hover{
+    transform: scale(1.05);
+    border: 1px solid red;
+}
+#category{
+    font-size: 2rem;
+}
+#desc{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+#image{
+    width: 30%;
+    height: 30%;
+    margin-top: 0.5rem;
+}
+#price{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+#price span{
+    color: green;
+}
+#rating{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+#rating span{
+    color: rgb(255, 251, 10);
+}
